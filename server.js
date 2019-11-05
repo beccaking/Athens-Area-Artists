@@ -27,6 +27,8 @@ app.use(methodOverride('_method'))
 //populate req.body with parsed info from forms
 app.use(express.urlencoded({extended:false}))
 
+const tattoos = require('./models/tattoos.js')
+
 //Routes
 app.get('/', (req, res) => {
   res.send('Hello World')
