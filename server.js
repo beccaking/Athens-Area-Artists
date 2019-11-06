@@ -52,6 +52,7 @@ app.get('/:tattooIndex', (req, res) => {
 })
 
 app.get('/', (req, res) => {
+  flag=false
   res.render('index.ejs', {
     allTattoos: tattoos
   })

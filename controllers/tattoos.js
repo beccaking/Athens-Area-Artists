@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
       allTattoos: tattoos
     })
   } else {
+    flag=false
     res.redirect('/')
   }
 })
@@ -30,6 +31,7 @@ router.get('/my-collection', (req, res) => {
       })
     })
   } else {
+    flag=false
     res.redirect('/')
   }
 })
@@ -38,6 +40,7 @@ router.get('/my-collection', (req, res) => {
 router.delete('/', (req, res) => {
   req.session.username = false
   res.redirect('/')
+  flag = false
 })
 
 

@@ -13,13 +13,18 @@ router.get('/new', (req, res) => {
 //Set cookie
 router.post('/', (req, res) => {
   User.findOne({username: req.body.username}, (error, foundUser) => {
-    if(foundUser.password === req.body.password){
-    req.session.username = foundUser.username
-    res.redirect('/tattoos')
-  } else {
-    flag = true
-    res.redirect('/sessions/new')
-  }
+    if(foundUser){
+        if(foundUser.password === req.body.password){
+        req.session.username = foundUser.username
+        res.redirect('/tattoos')
+      } else {
+        flag = true
+        res.redirect('/sessions/new')
+      }
+    } else {
+      flag = true
+      res.redirect('/sessions/new')
+    }
   })
 })
 
