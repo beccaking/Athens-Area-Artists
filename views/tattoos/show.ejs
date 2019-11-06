@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <img src="<%=tattoo.img%>" alt="<%=tattoo.artist%>"/>
+    Artist: <%=tattoo.artist%>
+    Studio: <%=tattoo.studio%>
+    Date: <%=tattoo.date%>
+    <form action="/tattoos/my-collection/<%=index%>" method="POST">
+        <input type="submit" value="Save">
+    </form>
+    <a href="/">Back</a>
+  </body>
+</html>

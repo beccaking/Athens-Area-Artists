@@ -6,16 +6,16 @@
 </head>
 <body>
   <h1>Tattoo Heaven</h1>
+  <h2>Welcome, <%=username%></h2>
   <a href="/tattoos/my-collection">My Collection</a>
   <%for(i=0;i<allTattoos.length;i++){%>
     <div>
-      <img src="<%=allTattoos[i].img%>" alt="<%=allTattoos[i].artist%>">
+      <a href="/tattoos/<%=i%>"><img src="<%=allTattoos[i].img%>" alt="<%=allTattoos[i].artist%>"></a>
       <form action="/tattoos/my-collection/<%=i%>" method="POST">
           <input type="submit" value="Save">
       </form>
     </div>
   <%}%>
-  <a href="/my-collection">My Collection</a>
   <form action="/tattoos/?_method=DELETE" method="POST">
     <input type="submit" value="Log Out">
   </form>
