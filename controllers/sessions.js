@@ -2,7 +2,8 @@ const express = require('express')
 const router = express.Router()
 const User = require('../models/users.js')
 
-flag = false
+let flag = false
+
 //Log In
 router.get('/new', (req, res) => {
     res.render('sessions/new.ejs', {

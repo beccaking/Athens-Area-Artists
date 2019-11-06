@@ -10,8 +10,12 @@ router.get('/new', (req, res) => {
 //Set cookie
 router.post('/', (req, res) => {
   User.create(req.body, (error, createdUser) => {
-    req.session.username = createdUser.username
-    res.redirect('/tattoos')
+    if(createdUser){
+      req.session.username = createdUser.username
+      res.redirect('/tattoos')
+    } else {
+      res.redirect('/users/new')
+    }
   })
 })
 
