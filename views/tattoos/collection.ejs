@@ -10,11 +10,14 @@
     <a href="/tattoos/my-collection/<%=i%>">
       <img src="<%=tattoos[i].img%>" alt="<%=tattoos[i].artist%>"/></a>
     <form action="/tattoos/my-collection/<%=tattoos[i].id%>?_method=DELETE" method="POST">
-      <input type="submit" value="Delete">
+      <input type="submit" value="Remove from collection">
     </form>
     <a href="/tattoos/my-collection/<%=tattoos[i].id%>/edit">Edit</a>
     <%}%>
     <a href="/tattoos/my-collection/create">Create New Item</a>
     <a href="/tattoos">Back</a>
+    <form action="/tattoos?_method=DELETE" method="POST">
+      <input type="submit" value="Log Out">
+    </form>
   </body>
   </html>
