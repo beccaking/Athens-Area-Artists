@@ -1,50 +1,50 @@
 const tattoos = [
-  {artist: 'Charlie V.'',
+  {artist: 'Charlie Vieregge'',
   studio: 'Skin Hooked Tattoo & Body Piercing',
   date: 'July 14, 2018',
   img: 'https://i.imgur.com/8d4LbnH.jpg'
 },
-{artist: 'Charlie V.',
+{artist: 'Charlie Vieregge',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'October 3, 2018',
 img: 'https://i.imgur.com/ABjI5hM.jpg'
 },
-{artist: 'Charlie V.',
+{artist: 'Charlie Vieregge',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'October 23, 2018',
 img: 'https://i.imgur.com/RBtT62n.jpg'
 },
-{artist: 'Charlie V.',
+{artist: 'Charlie Vieregge',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'November 7, 2018',
 img: 'https://i.imgur.com/jkS5vf9.png'
 },
-{artist: 'Charlie V.',
+{artist: 'Charlie Vieregge',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'August 19, 2018',
 img: 'https://i.imgur.com/IC8HiEp.jpg'
 },
-{artist: 'Shawn',
+{artist: 'Shawn Hawks',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'January 18, 2017',
 img: 'https://i.imgur.com/d40yHtO.jpg'
 },
-{artist: 'Shawn',
+{artist: 'Shawn Hawks',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'July 14, 2018',
 img: 'https://i.imgur.com/afY8Ech.jpg'
 },
-{artist: 'Shawn',
+{artist: 'Shawn Hawks',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'August 25, 2018',
 img: 'https://i.imgur.com/ATxleAO.jpg'
 },
-{artist: 'Shawn',
+{artist: 'Shawn Hawks',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'September 12, 2018',
 img: 'https://i.imgur.com/6vl0gs1.jpg'
 },
-{artist: 'Shawn',
+{artist: 'Shawn Hawks',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'September 27, 2018',
 img: 'https://i.imgur.com/7WQJhvt.jpg'
