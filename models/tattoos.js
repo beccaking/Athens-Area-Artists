@@ -1,5 +1,5 @@
 const tattoos = [
-  {artist: 'Charlie Vieregge'',
+  {artist: 'Charlie Vieregge',
   studio: 'Skin Hooked Tattoo & Body Piercing',
   date: 'July 14, 2018',
   img: 'https://i.imgur.com/8d4LbnH.jpg'
@@ -150,27 +150,27 @@ date: 'April 2, 2013',
 img: 'https://i.imgur.com/SGdAjLH.jpg'
 },
 {artist: 'Joshua Mullins',
-studio: 'Joshua Mullins Tattoing',
+studio: 'Joshua Mullins Tattooing',
 date: 'June 19, 2018',
 img: 'https://i.imgur.com/kDvQxIc.jpg'
 },
 {artist: 'Joshua Mullins',
-studio: 'Joshua Mullins Tattoing',
+studio: 'Joshua Mullins Tattooing',
 date: 'June 19, 2018',
 img: 'https://i.imgur.com/3M8FdDX.jpg'
 },
 {artist: 'Joshua Mullins',
-studio: 'Joshua Mullins Tattoing',
+studio: 'Joshua Mullins Tattooing',
 date: 'November 24, 2018',
 img: 'https://i.imgur.com/ouImklq.jpg'
 },
 {artist: 'Joshua Mullins',
-studio: 'Joshua Mullins Tattoing',
+studio: 'Joshua Mullins Tattooing',
 date: 'June 19, 2018',
 img: 'https://i.imgur.com/pf08HMh.jpg'
 },
 {artist: 'Joshua Mullins',
-studio: 'Joshua Mullins Tattoing',
+studio: 'Joshua Mullins Tattooing',
 date: 'June 19, 2018',
 img: 'https://i.imgur.com/eWS06yL.jpg'
 }

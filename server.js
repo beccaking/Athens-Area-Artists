@@ -30,8 +30,16 @@ app.use(express.urlencoded({extended:false}))
 const tattoos = require('./models/tattoos.js')
 
 //Routes
+app.get('/:tattooIndex', (req, res) => {
+  res.render('show.ejs', {
+    tattoo: tattoos[req.params.tattooIndex]
+  })
+})
+
 app.get('/', (req, res) => {
-  res.send('Hello World')
+  res.render('index.ejs', {
+    allTattoos: tattoos
+  })
 })
 
 //Listener

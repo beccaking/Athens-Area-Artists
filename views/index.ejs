@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <h1>Tattoo Heaven</h1>
+  <a href='/sessions/new'>Log In</a>
+  <a href='/users/new'>Register</a>
+  <%for(i=0;i<allTattoos.length;i++){%>
+    <a href="/<%=i%>"><img src="<%=allTattoos[i].img%>" alt="<%=allTattoos[i].artist%>"></a>
+    <%}%>
+  </body>
+  </html>
