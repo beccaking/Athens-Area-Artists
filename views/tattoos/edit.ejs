@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  <img src="<%=tattoo.img%>" alt="<%=tattoo.artist%>">
+  <form action="/tattoos/my-collection/<%=tattoo.id%>/edit?_method=PUT" method="POST">
+    Artist: <input type="text" name="artist" value="<%=tattoo.artist%>"><br/>
+    Studio: <input type="text" name="studio" value="<%=tattoo.studio%>"><br/>
+    Date: <input type="text" name="date" value="<%=tattoo.date%>"><br/>
+    Image URL: <input type="text" name="img" value="<%=tattoo.img%>">
+    <input type="submit" value="Make Changes">
+  </form>
+  <a href="/tattoos/my-collection">Back</a>
+</body>
+</html>
