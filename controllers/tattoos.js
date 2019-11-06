@@ -25,7 +25,7 @@ router.post('/my-collection/:id', (req, res) => {
 router.get('/my-collection', (req, res) => {
   if(req.session.username){
     Collection.find({user: req.sessions.username}, (error, allTattoos) => {
-      res.render('sessions/collection.ejs', {
+      res.render('tattoos/collection.ejs', {
         tattoos: allTattoos
       })
     })
