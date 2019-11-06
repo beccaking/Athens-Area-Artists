@@ -4,6 +4,7 @@ const methodOverride = require('method-override')
 const mongoose = require('mongoose')
 const app = express()
 const db = mongoose.connection
+const session = require('express-session')
 require('dotenv').config()
 
 //Port
@@ -26,6 +27,11 @@ app.use(express.static('public'))
 app.use(methodOverride('_method'))
 //populate req.body with parsed info from forms
 app.use(express.urlencoded({extended:false}))
+app.use(session({
+  secret: 'randomString',
+  resave: false,
+  saveUninitialized: false
+}))
 
 const usersController = require('./controllers/users.js')
 app.use('/users', usersController);

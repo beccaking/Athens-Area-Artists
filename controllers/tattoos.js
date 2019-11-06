@@ -3,7 +3,7 @@ const router = express.Router()
 const tattoos = require('../models/tattoos.js')
 const Collection = require('../models/collection.js')
 
-//Collection page with save buttons, Log in only
+//Collection page with save buttons, Logged in only
 router.get('/', (req, res) => {
   if(req.session.username){
     res.render('tattoos/index.ejs', {
@@ -14,18 +14,14 @@ router.get('/', (req, res) => {
   }
 })
 
-//Save a tattoo from the index page to your collection
+//Save a tattoo from the index page to your collection, Logged in only
 router.post('/my-collection/:id', (req, res) => {
-  if(req.session.username){
     Collection.create(tattoos[req.params.id], {user: req.sessions.username}, (error, createdUser) => {
       res.redirect('/tattoos')
     })
-  } else {
-    res.redirect('/')
-  }
 })
 
-//Personal collection page
+//Personal collection page, Logged in only
 router.get('/my-collection', (req, res) => {
   if(req.session.username){
     Collection.find({user: req.sessions.username}, (error, allTattoos) => {
@@ -37,5 +33,12 @@ router.get('/my-collection', (req, res) => {
     res.redirect('/')
   }
 })
+
+//Log Out
+router.delete('/', (req, res) => {
+  req.session.username = false
+  res.redirect('/')
+})
+
 
 module.exports = router
