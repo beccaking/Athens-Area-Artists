@@ -11,6 +11,7 @@ router.get('/new', (req, res) => {
 router.post('/', (req, res) => {
   User.findOne({username: req.body.username}, (error, foundUser) => {
     req.session.username = foundUser.username
+    res.redirect('/tattoos')
   })
 })
 

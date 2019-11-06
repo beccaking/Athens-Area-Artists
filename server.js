@@ -27,6 +27,15 @@ app.use(methodOverride('_method'))
 //populate req.body with parsed info from forms
 app.use(express.urlencoded({extended:false}))
 
+const usersController = require('./controllers/users.js')
+app.use('/users', usersController);
+
+const sessionsController = require('./controllers/sessions.js')
+app.use('/sessions', sessionsController);
+
+const tattoosController = require('./controllers/tattoos.js')
+app.use('/tattoos', tattoosController);
+
 const tattoos = require('./models/tattoos.js')
 
 //Routes

@@ -1,13 +1,13 @@
 const tattoos = [
   {artist: 'Charlie Vieregge',
   studio: 'Skin Hooked Tattoo & Body Piercing',
+  date: 'October 3, 2018',
+  img: 'https://i.imgur.com/ABjI5hM.jpg'
+  },
+  {artist: 'Charlie Vieregge',
+  studio: 'Skin Hooked Tattoo & Body Piercing',
   date: 'July 14, 2018',
   img: 'https://i.imgur.com/8d4LbnH.jpg'
-},
-{artist: 'Charlie Vieregge',
-studio: 'Skin Hooked Tattoo & Body Piercing',
-date: 'October 3, 2018',
-img: 'https://i.imgur.com/ABjI5hM.jpg'
 },
 {artist: 'Charlie Vieregge',
 studio: 'Skin Hooked Tattoo & Body Piercing',
