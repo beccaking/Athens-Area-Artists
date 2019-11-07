@@ -36,7 +36,6 @@ nav > a {
   height: 370px;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 
 .img-thumbnail {
@@ -86,8 +85,29 @@ nav > a {
   padding: 2px;
 }
 
+.logout {
+  margin-top: 10px;
+}
+
 .buttons {
   width: 0px;
   position: relative;
-  right: 300px;
+  right: 165px;
+  top: 350px;
+  font-size: 10px;
+  color: black;
+}
+
+.edit {
+  padding: 2px;
+  font-size: 10px;
+}
+
+.remove {
+  position: relative;
+  right: 45px;
+}
+
+.bar {
+  margin: 0 auto;
 }

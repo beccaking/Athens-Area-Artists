@@ -6,6 +6,10 @@
 <body>
   <h1>Tattoo Heaven</h1>
   <h2>My Collection</h2>
+  <nav class="bar">
+  <a class="btn btn-default" href="/tattoos">Go Back</a>
+  <a class="btn btn-default" href="/tattoos/my-collection/create">Create New Item</a>
+</nav>
 <div class="container">
   <%for(i=0;i<tattoos.length;i++){%>
     <div class="box">
@@ -14,17 +18,11 @@
     </div>
     <div class="buttons">
     <form action="/tattoos/my-collection/<%=tattoos[i].id%>?_method=DELETE" method="POST">
-      <input type="submit" value="Remove from collection">
+      <input class="remove" type="submit" value="Remove from collection">
     </form>
-    <a class="btn btn-default" href="/tattoos/my-collection/<%=tattoos[i].id%>/edit">Edit</a>
+    <a class="btn btn-default edit" href="/tattoos/my-collection/<%=tattoos[i].id%>/edit">Edit</a>
   </div>
     <%}%>
 </div>
-    <a class="btn btn-default" href="/tattoos/my-collection/create">Create New Item</a>
-    <a href="/tattoos">Back</a>
-
-    <form action="/tattoos?_method=DELETE" method="POST">
-      <input type="submit" value="Log Out">
-    </form>
   </body>
   </html>
