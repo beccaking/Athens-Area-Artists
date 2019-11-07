@@ -52,7 +52,7 @@ app.get('/databasetest', (req, res) => {
   })
 })
 
-app.get('/:tattooIndex', (req, res) => {
+app.get('/show/:tattooIndex', (req, res) => {
   res.render('show.ejs', {
     tattoo: tattoos[req.params.tattooIndex]
   })

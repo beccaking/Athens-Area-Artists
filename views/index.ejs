@@ -9,7 +9,7 @@
   <a href='/sessions/new'>Log In</a>
   <a href='/users/new'>Register</a><br/>
   <%for(i=0;i<allTattoos.length;i++){%>
-    <a href="/<%=i%>"><img src="<%=allTattoos[i].img%>" alt="<%=allTattoos[i].artist%>"></a>
+    <a href="/show/<%=i%>"><img src="<%=allTattoos[i].img%>" alt="<%=allTattoos[i].artist%>"></a>
     <%}%>
   </body>
   </html>
