@@ -12,7 +12,7 @@
   <div class='container'>
   <%for(i=0;i<allTattoos.length;i++){%>
     <div class='box'>
-      <a href="/tattoos/<%=i%>"><img class='img-thumbnail' src="<%=allTattoos[i].img%>" alt="<%=allTattoos[i].artist%>"></a>
+      <a href="/tattoos/show/<%=i%>"><img class='img-thumbnail' src="<%=allTattoos[i].img%>" alt="<%=allTattoos[i].artist%>"></a>
     </div>
     <div class="save">
       <form class="save-btn" action="/tattoos/my-collection/<%=i%>" method="POST">

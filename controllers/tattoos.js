@@ -27,14 +27,6 @@ router.get('/my-collection', (req, res) => {
       })
     })
 })
-//Index show page with save button
-router.get('/:id', (req, res) => {
-  res.render('tattoos/show.ejs', {
-    tattoo: tattoos[req.params.id],
-    index: req.params.id,
-    tabTitle: tattoos[req.params.id].artist
-  })
-})
 //Create page
 router.get('/my-collection/create', (req, res) => {
   res.render('tattoos/create.ejs', {
@@ -51,12 +43,20 @@ router.get('/my-collection/:id/edit', (req, res) => {
   })
 })
 //Personal collection show page
-router.get('/my-collection/:id', (req, res) => {
+router.get('/my-collection/show/:id', (req, res) => {
   Collection.find({user:req.session.username}, (error, allTattoos) => {
     res.render('tattoos/collectionshow.ejs', {
       tattoo: allTattoos[req.params.id],
       tabTitle: allTattoos[req.params.id].artist
     })
+  })
+})
+//Index show page with save button
+router.get('/show/:id', (req, res) => {
+  res.render('tattoos/show.ejs', {
+    tattoo: tattoos[req.params.id],
+    index: req.params.id,
+    tabTitle: tattoos[req.params.id].artist
   })
 })
 //Create route, brand new
