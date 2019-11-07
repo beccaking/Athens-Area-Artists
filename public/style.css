@@ -36,6 +36,7 @@ nav > a {
   height: 370px;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 
 .img-thumbnail {
@@ -80,7 +81,13 @@ nav > a {
   padding: 2px;
 }
 
-.save-button {
+.save-button, .remove-button {
   margin-top: 15px;
   padding: 2px;
+}
+
+.buttons {
+  width: 0px;
+  position: relative;
+  right: 300px;
 }

@@ -4,13 +4,15 @@
 <% include ../partials/head.ejs %>
   </head>
   <body>
-    <img src="<%=tattoo.img%>" alt="<%=tattoo.artist%>"/>
-    Artist: <%=tattoo.artist%>
-    Studio: <%=tattoo.studio%>
-    Date: <%=tattoo.date%>
+    <img class="display" src="<%=tattoo.img%>" alt="<%=tattoo.artist%>"/>
+    <div class="descriptors">
+      <span class="title"> Artist:</span> <%=tattoo.artist%><br/>
+      <span class="title">Studio:</span> <%=tattoo.studio%><br/>
+      <span class="title">Date:</span> <%=tattoo.date%><br/>
     <form action="/tattoos/my-collection/<%=tattoo.id%>?_method=DELETE" method="POST">
-      <input type="submit" value="Remove from collection">
+      <input class="btn btn-default remove-button" type="submit" value="Remove from collection">
     </form>
-    <a href="/tattoos/my-collection">Back</a>
+    <a class="btn btn-default back" href="/tattoos/my-collection">Back</a>
+    </div>
   </body>
 </html>
