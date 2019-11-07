@@ -6,6 +6,7 @@ const app = express()
 const db = mongoose.connection
 const session = require('express-session')
 require('dotenv').config()
+const User = require('./models/users.js')
 
 //Port
 const PORT = process.env.PORT
@@ -45,6 +46,12 @@ app.use('/tattoos', tattoosController);
 const tattoos = require('./models/tattoos.js')
 
 //Routes
+app.get('/databasetest', (req, res) => {
+  User.find({}, (error, foundElement) => {
+    res.send(foundElement)
+  })
+})
+
 app.get('/:tattooIndex', (req, res) => {
   res.render('show.ejs', {
     tattoo: tattoos[req.params.tattooIndex]
