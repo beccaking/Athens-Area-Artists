@@ -133,3 +133,8 @@ a, a:hover {
   text-decoration: none;
   color: lightsteelblue;
 }
+
+.error {
+  font-family: Arial;
+  color: red;
+}
