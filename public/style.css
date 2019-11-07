@@ -59,3 +59,23 @@ nav > a {
   font-size: 10px;
   color: black;
 }
+
+.display {
+  width: 330px;
+  display: flex;
+  margin: 50px auto;
+  border: 2px solid lightsteelblue;
+}
+
+.descriptors {
+  font-family: 'Kalam', cursive;
+  position: absolute;
+  width: 300px;
+  bottom: 350px;
+  left: 100px;
+}
+
+.back {
+  margin-top: 15px;
+  padding: 2px;
+}

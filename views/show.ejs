@@ -4,10 +4,12 @@
   <% include ./partials/head.ejs %>
   </head>
   <body>
-    <img src="<%=tattoo.img%>" alt="<%=tattoo.artist%>"/>
-    Artist: <%=tattoo.artist%>
-    Studio: <%=tattoo.studio%>
-    Date: <%=tattoo.date%>
-    <a href="/">Back</a>
+    <img class="display" src="<%=tattoo.img%>" alt="<%=tattoo.artist%>"/>
+    <div class="descriptors">
+      <b>Artist:</b> <%=tattoo.artist%><br/>
+      <b>Studio:</b> <%=tattoo.studio%><br/>
+      <b>Date:</b> <%=tattoo.date%><br/>
+      <a class="btn btn-default back" href="/">Back</a>
+    </div>
   </body>
 </html>
