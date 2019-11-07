@@ -71,7 +71,7 @@ nav > a {
   font-family: 'Kalam', cursive;
   position: absolute;
   width: 300px;
-  bottom: 350px;
+  bottom: 270px;
   left: 100px;
 }
 
@@ -121,5 +121,15 @@ nav > a {
   font-family: 'Kalam', cursive;
   text-align: center;
   position: relative;
-  top: 100px;
+  top: 40px;
+}
+
+.login {
+  margin: 10px;
+  padding: 2px;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: lightsteelblue;
 }

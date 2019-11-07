@@ -4,6 +4,7 @@
 <% include ../partials/head.ejs %>
 </head>
 <body>
+  <h1>Tattoo Heaven</h1>
   <img class="display" src="<%=tattoo.img%>" alt="<%=tattoo.artist%>">
   <div class="descriptors">
   <form action="/tattoos/my-collection/<%=tattoo.id%>/edit?_method=PUT" method="POST">

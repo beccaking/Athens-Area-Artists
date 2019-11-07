@@ -4,15 +4,16 @@
 <% include ../partials/head.ejs %>
   </head>
   <body>
-<h1>Tattoo Heaven</h1>
+<a href="/"><h1>Tattoo Heaven</h1></a>
 <%if(flag){%>
   Wrong Username or Password
 <%}%>
-<form action="/sessions" method="POST">
-<input type="text" name="username" placeholder="Username"><br/>
-<input type="password" name="password" placeholder="Password"><br/>
-<input type="submit" value="Log In">
-</form>
-<a href="/">Back</a>
+<div class="form">
+  <form action="/sessions" method="POST">
+    <input type="text" name="username" placeholder="Username"><br/>
+    <input type="password" name="password" placeholder="Password"><br/>
+    <input class="btn btn-default login" type="submit" value="Log In">
+  </form>
+</div>
   </body>
 </html>
