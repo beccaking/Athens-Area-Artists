@@ -7,7 +7,8 @@ mistake = false
 //Create user
 router.get('/new', (req, res) => {
   res.render('users/new.ejs', {
-    mistake: mistake
+    mistake: mistake,
+    tabTitle: 'Register'
   })
 })
 

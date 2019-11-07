@@ -10,7 +10,8 @@ router.get('/', (req, res) => {
   if(req.session.username){
     res.render('tattoos/index.ejs', {
       allTattoos: tattoos,
-      username: req.session.username
+      username: req.session.username,
+      tabTitle: 'Tattoos'
     })
   } else {
     flag=false
@@ -21,7 +22,8 @@ router.get('/', (req, res) => {
 router.get('/my-collection', (req, res) => {
     Collection.find({user:req.session.username}, (error, allTattoos) => {
       res.render('tattoos/collection.ejs', {
-        tattoos: allTattoos
+        tattoos: allTattoos,
+        tabTitle: 'My Collection'
       })
     })
 })
@@ -29,18 +31,22 @@ router.get('/my-collection', (req, res) => {
 router.get('/:id', (req, res) => {
   res.render('tattoos/show.ejs', {
     tattoo: tattoos[req.params.id],
-    index: req.params.id
+    index: req.params.id,
+    tabTitle: tattoos[req.params.id].artist
   })
 })
 //Create page
 router.get('/my-collection/create', (req, res) => {
-  res.render('tattoos/create.ejs')
+  res.render('tattoos/create.ejs', {
+    tabTitle: 'Add new tattoo'
+  })
 })
 //Edit page
 router.get('/my-collection/:id/edit', (req, res) => {
   Collection.findById(req.params.id, (error, foundObject) => {
     res.render('tattoos/edit.ejs', {
-      tattoo: foundObject
+      tattoo: foundObject,
+      tabTitle: 'Edit'
     })
   })
 })
@@ -48,7 +54,8 @@ router.get('/my-collection/:id/edit', (req, res) => {
 router.get('/my-collection/:id', (req, res) => {
   Collection.find({user:req.session.username}, (error, allTattoos) => {
     res.render('tattoos/collectionshow.ejs', {
-      tattoo: allTattoos[req.params.id]
+      tattoo: allTattoos[req.params.id],
+      tabTitle: allTattoos[req.params.id].artist
     })
   })
 })

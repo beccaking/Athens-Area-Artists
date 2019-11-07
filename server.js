@@ -54,14 +54,16 @@ app.get('/databasetest', (req, res) => {
 
 app.get('/show/:tattooIndex', (req, res) => {
   res.render('show.ejs', {
-    tattoo: tattoos[req.params.tattooIndex]
+    tattoo: tattoos[req.params.tattooIndex],
+    tabTitle: tattoos[req.params.tattooIndex].artist
   })
 })
 
 app.get('/', (req, res) => {
   flag = false
   res.render('index.ejs', {
-    allTattoos: tattoos
+    allTattoos: tattoos,
+    tabTitle: 'Home'
   })
 })
 

@@ -7,7 +7,8 @@ flag = false
 //Log In
 router.get('/new', (req, res) => {
     res.render('sessions/new.ejs', {
-      flag: flag
+      flag: flag,
+      tabTitle: 'Log In'
     })
 })
 

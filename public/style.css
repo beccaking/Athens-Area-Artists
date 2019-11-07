@@ -1,0 +1,33 @@
+body {
+  background: black;
+  color: lightsteelblue;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size: 50px;
+}
+
+nav {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px auto;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbnail {
+  width: 200px;
+}
