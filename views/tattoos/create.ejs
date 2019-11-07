@@ -4,13 +4,15 @@
 <% include ../partials/head.ejs %>
   </head>
   <body>
+    <div class="form">
     <form action="/tattoos/my-collection" method="POST">
       Artist: <input type="text" name="artist" placeholder="Artist"><br/>
       Studio: <input type="text" name="studio" placeholder="Studio"><br/>
       Date: <input type="text" name="date" placeholder="Date"><br/>
       Image URL: <input type="text" name="img" placeholder="Image URL"><br/>
-      <input type="submit" value="Create New Item">
+      <input class="btn btn-default create" type="submit" value="Create New Item">
     </form>
-    <a href="/tattoos/my-collection">Back</a>
+    <a class="btn btn-default back" href="/tattoos/my-collection">Back</a>
+  </div>
   </body>
 </html>
