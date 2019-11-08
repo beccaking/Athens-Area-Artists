@@ -1,8 +1,7 @@
 $(() => {
 
-  $('button').on('click', () => {
-    $.post('/tattoos/my-collection',
-    
-      )
-  }))
+  $('.dropbtn').on('click', () => {
+    $('.dropdown-content').css('display', 'block')
+  })
+
 })

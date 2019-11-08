@@ -14,6 +14,62 @@ h2 {
   font-family: 'Kalam', cursive;
 }
 
+header {
+  background: black;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid lightsteelblue;
+  border-bottom: 1px solid lightsteelblue;
+}
+
+.session-links {
+list-style-type: none;
+position: absolute;
+left: 80%;
+width: 100%;
+padding: 14px 20px;
+}
+
+li {
+  display: inline;
+  padding: 14px 20px;
+  font-weight: bold;
+}
+
+li a {
+  font-weight: bold;
+  color: lightsteelblue;
+}
+
+.dropdown {
+  float: left;
+  padding: 10px 15px;
+}
+
+.dropbtn {
+  background-color: black;
+  color: lightsteelblue;
+  border: none;
+  font-weight: bold;
+  width: 100px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: black;
+  border-top: none;
+  padding: 10px 20px;
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 nav {
   text-align: center;
 }
@@ -26,7 +82,7 @@ nav > a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 30px auto;
+  margin: auto;
   justify-content: center;
 }
 

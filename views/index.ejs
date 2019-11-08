@@ -5,10 +5,37 @@
 </head>
 <body>
   <h1>Tattoo Heaven</h1>
-  <nav>
-    <a class='btn btn-default' href='/sessions/new'>Log In</a>
-    <a class='btn btn-default' href='/users/new'>Register</a>
-  </nav>
+  <header>
+  <div class="dropdown">
+    <span class="dropbtn">Artists<span class="caret">
+    <div class="dropdown-content">
+      <a href="#">Charlie Vieregge</a><br/>
+      <hr>
+      <a href="#">Brad Clabaugh</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <span class="dropbtn">Studios<span class="caret">
+    <div class="dropdown-content">
+      <a href="#">Skin Hooked Tattoo and Piercing</a><br/>
+      <hr>
+      <a href="#">Thunder Bunny Tattoo Parlor</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <span class="dropbtn">Designs<span class="caret">
+    <div class="dropdown-content">
+      <a href="#">Flora</a><br/>
+      <hr>
+      <a href="#">Skulls</a>
+    </div>
+  </div>
+  <ul class="session-links">
+    <li><a href='/sessions/new'>Log In</a></li>
+    <li><a href='/users/new'>Register</a></li>
+  </ul>
+</header>
+  <br/>
   <div class='container'>
     <%for(i=0;i<allTattoos.length;i++){%>
       <div class='box'>
