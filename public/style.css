@@ -177,11 +177,21 @@ top: 32px;
 .edit {
   padding: 2px;
   font-size: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+  right: 80px;
+  bottom: 16px;
 }
 
 .remove {
   position: relative;
-  right: 45px;
+  right: 10px;
+  background-color: black;
+  color: lightsteelblue;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 
@@ -210,4 +220,12 @@ a, a:hover {
 .error {
   font-family: Arial;
   color: red;
+}
+
+.spaceholder {
+  height: 230px;
+}
+
+footer {
+  margin-top: 150px;
 }

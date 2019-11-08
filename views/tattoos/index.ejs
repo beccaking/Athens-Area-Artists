@@ -51,7 +51,6 @@
       <a href="/tattoos/show/<%=i%>"><img class='img-thumbnail' src="<%=allTattoos[i].img%>" alt="<%=allTattoos[i].artist%>"></a>
     </div>
     <div class="save">
-      <!-- <button class="save-btn" id="<%=i%>">Save</button> -->
       <form action="/tattoos/my-collection/<%=i%>" method="POST">
           <input class="save-btn" type="submit" value="Save to collection">
       </form>
