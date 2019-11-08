@@ -22,6 +22,7 @@ header {
   align-items: center;
   border-top: 1px solid lightsteelblue;
   border-bottom: 1px solid lightsteelblue;
+  padding-left: 30px;
 }
 
 .session-links {
@@ -29,7 +30,7 @@ list-style-type: none;
 position: absolute;
 left: 80%;
 width: 100%;
-padding: 14px 20px;
+padding: 20px 20px;
 }
 
 li {
@@ -143,6 +144,14 @@ nav > a {
 
 .logout {
   margin-top: 10px;
+  background: black;
+  border: none;
+}
+
+.my-collection {
+position: relative;
+right: 150px;
+top: 32px;
 }
 
 .buttons {

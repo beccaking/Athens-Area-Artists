@@ -5,13 +5,46 @@
 </head>
 <body>
   <h1>Tattoo Heaven</h1>
-  <h2>Welcome, <%=username%></h2>
-  <nav>
-    <a class='btn btn-default' href="/tattoos/my-collection">My Collection</a>
-    <form action="/tattoos/?_method=DELETE" method="POST">
-      <input class="btn btn-default logout" type="submit" value="Log Out">
-    </form>
-  </nav>
+  <header>
+  <div class="dropdown">
+    <span class="dropbtn">Artists<span class="caret">
+    <div class="dropdown-content">
+      <a href="/charlie">Charlie Vieregge</a><br/>
+      <hr>
+      <a href="/shawn">Shawn Hawks</a><br/>
+      <hr>
+      <a href="/brad">Brad Clabaugh</a><br/>
+      <hr>
+      <a href="/garrett">Garrett Hyatt</a><br/>
+      <hr>
+      <a href="/bobby">Bobby Avalos</a><br/>
+      <hr>
+      <a href="/eric">Eric Pierce</a><br/>
+      <hr>
+      <a href="/jim">Jim Kisor</a><br/>
+      <hr>
+      <a href="/joshua">Joshua Mullins</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <span class="dropbtn">Studios<span class="caret">
+    <div class="dropdown-content">
+      <a href="/skin-hooked">Skin Hooked Tattoo & Body Piercing</a><br/>
+      <hr>
+      <a href="/thunder-bunny">Thunder Bunny Tattoo Parlor</a><br/>
+      <hr>
+      <a href="/decorative-injections">Decorative Injections Tattooing & Body Piercing</a>
+      <hr>
+      <a href="/joshua-mullins">Joshua Mullins Tattooing</a>
+    </div>
+  </div>
+  <ul class="session-links">
+    <li><a class="my-collection" href='/tattoos/my-collection'>My Collection</a></li>
+    <li><form action="/tattoos/?_method=DELETE" method="POST">
+      <input class="logout" type="submit" value="Log Out">
+    </form></li>
+  </ul>
+</header>
   <div class='container'>
   <%for(i=0;i<allTattoos.length;i++){%>
     <div class='box'>

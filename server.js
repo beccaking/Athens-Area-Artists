@@ -6,7 +6,6 @@ const app = express()
 const db = mongoose.connection
 const session = require('express-session')
 require('dotenv').config()
-const User = require('./models/users.js')
 
 //Port
 const PORT = process.env.PORT
@@ -46,9 +45,100 @@ app.use('/tattoos', tattoosController);
 const tattoos = require('./models/tattoos.js')
 
 //Routes
-app.get('/databasetest', (req, res) => {
-  User.find({}, (error, foundElement) => {
-    res.send(foundElement)
+
+app.get('/charlie', (req, res) => {
+  const charlieTattoos = tattoos.filter(tattoo => tattoo.artist === 'Charlie Vieregge')
+    res.render('index.ejs', {
+    allTattoos: charlieTattoos,
+    tabTitle: 'Charlie Vieregge'
+  })
+})
+
+app.get('/shawn', (req, res) => {
+  const shawnTattoos = tattoos.filter(tattoo => tattoo.artist === 'Shawn Hawks')
+  res.render('index.ejs', {
+    allTattoos: shawnTattoos,
+    tabTitle: 'Shawn Hawks'
+  })
+})
+
+app.get('/brad', (req, res) => {
+  const bradTattoos = tattoos.filter(tattoo => tattoo.artist === 'Brad Clabaugh')
+  res.render('index.ejs', {
+    allTattoos: bradTattoos,
+    tabTitle: 'Brad Clabaugh'
+  })
+})
+
+app.get('/garrett', (req, res) => {
+  const garrettTattoos = tattoos.filter(tattoo => tattoo.artist === 'Garrett Hyatt')
+  res.render('index.ejs', {
+    allTattoos: garrettTattoos,
+    tabTitle: 'Garrett Hyatt'
+  })
+})
+
+app.get('/bobby', (req, res) => {
+  const bobbyTattoos = tattoos.filter(tattoo => tattoo.artist === 'Bobby Avalos')
+  res.render('index.ejs', {
+    allTattoos: bobbyTattoos,
+    tabTitle: 'Garrett Hyatt'
+  })
+})
+
+app.get('/eric', (req, res) => {
+  const ericTattoos = tattoos.filter(tattoo => tattoo.artist === 'Eric Pierce')
+  res.render('index.ejs', {
+    allTattoos: ericTattoos,
+    tabTitle: 'Eric Pierce'
+  })
+})
+
+app.get('/jim', (req, res) => {
+  const jimTattoos = tattoos.filter(tattoo => tattoo.artist === 'Jim Kisor')
+  res.render('index.ejs', {
+    allTattoos: jimTattoos,
+    tabTitle: 'Jim Kisor'
+  })
+})
+
+app.get('/joshua', (req, res) => {
+  const joshuaTattoos = tattoos.filter(tattoo => tattoo.artist === 'Joshua Mullins')
+  res.render('index.ejs', {
+    allTattoos: joshuaTattoos,
+    tabTitle: 'Joshua Mullins'
+  })
+})
+
+app.get('/skin-hooked', (req, res) => {
+  const skinhookedTattoos = tattoos.filter(tattoo => tattoo.studio === 'Skin Hooked Tattoo & Body Piercing')
+  res.render('index.ejs', {
+    allTattoos: skinhookedTattoos,
+    tabTitle: 'Skin Hooked Tattoo & Body Piercing'
+  })
+})
+
+app.get('/thunder-bunny', (req, res) => {
+  const thunderbunnyTattoos = tattoos.filter(tattoo => tattoo.studio === 'Thunder Bunny Tattoo Parlor')
+  res.render('index.ejs', {
+    allTattoos: thunderbunnyTattoos,
+    tabTitle: 'Thunder Bunny Tattoo Parlor'
+  })
+})
+
+app.get('/decorative-injections', (req, res) => {
+  const decorativeTattoos = tattoos.filter(tattoo => tattoo.studio === 'Decorative Injections Tattooing & Body Piercing')
+  res.render('index.ejs', {
+    allTattoos: decorativeTattoos,
+    tabTitle: 'Decorative Injections Tattooing & Body Piercing'
+  })
+})
+
+app.get('/joshua-mullins', (req, res) => {
+  const joshuaTattoos = tattoos.filter(tattoo => tattoo.studio === 'Joshua Mullins Tattooing')
+  res.render('index.ejs', {
+    allTattoos: joshuaTattoos,
+    tabTitle: 'Joshua Mullins Tattooing'
   })
 })
 
