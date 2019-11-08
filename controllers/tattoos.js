@@ -5,13 +5,168 @@ const Collection = require('../models/collection.js')
 
 //Routes for a logged-in user
 
+router.get('/joshua-mullins', (req, res) => {
+  const joshuaTattoos = tattoos.filter(tattoo => tattoo.studio === 'Joshua Mullins Tattooing')
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: joshuaTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/decorative-injections', (req, res) => {
+  const decorativeTattoos = tattoos.filter(tattoo => tattoo.studio === 'Decorative Injections Tattooing & Body Piercing')
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: decorativeTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/thunder-bunny', (req, res) => {
+  const thunderbunnyTattoos = tattoos.filter(tattoo => tattoo.studio === 'Thunder Bunny Tattoo Parlor')
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: thunderbunnyTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/skin-hooked', (req, res) => {
+  const skinhookedTattoos = tattoos.filter(tattoo => tattoo.studio === 'Skin Hooked Tattoo & Body Piercing')
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: skinhookedTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/joshua', (req, res) => {
+  const joshuaTattoos = tattoos.filter(tattoo => tattoo.artist === 'Joshua Mullins')
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: joshuaTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/jim', (req, res) => {
+  const jimTattoos = tattoos.filter(tattoo => tattoo.artist === 'Jim Kisor')
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: jimTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/eric', (req, res) => {
+  const ericTattoos = tattoos.filter(tattoo => tattoo.artist === 'Eric Pierce')
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: ericTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/bobby', (req, res) => {
+  const bobbyTattoos = tattoos.filter(tattoo => tattoo.artist === 'Bobby Avalos')
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: bobbyTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/garrett', (req, res) => {
+  const garrettTattoos = tattoos.filter(tattoo => tattoo.artist === 'Garrett Hyatt')
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: garrettTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/brad', (req, res) => {
+  const bradTattoos = tattoos.filter(tattoo => tattoo.artist === 'Brad Clabaugh')
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: bradTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/shawn', (req, res) => {
+  const shawnTattoos = tattoos.filter(tattoo => tattoo.artist === 'Shawn Hawks')
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: shawnTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/charlie', (req, res) => {
+  const charlieTattoos = tattoos.filter(tattoo => tattoo.artist === 'Charlie Vieregge')
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: charlieTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
 //Index page with save buttons
 router.get('/', (req, res) => {
   if(req.session.username){
     res.render('tattoos/index.ejs', {
       allTattoos: tattoos,
-      username: req.session.username,
-      tabTitle: 'Tattoos'
+      tabTitle: req.session.username
     })
   } else {
     flag=false
