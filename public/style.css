@@ -25,12 +25,28 @@ header {
   padding-left: 30px;
 }
 
-.session-links {
+.session-links{
 list-style-type: none;
 position: absolute;
 left: 80%;
 width: 100%;
 padding: 20px 20px;
+}
+
+.index-links {
+  list-style-type: none;
+  position: absolute;
+  left: 90%;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+.collection-links {
+  list-style-type: none;
+  position: absolute;
+  left: 35%;
+  width: 100%;
+  padding: 20px 20px;
 }
 
 li {
@@ -69,14 +85,6 @@ li a {
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
-
-nav {
-  text-align: center;
-}
-
-nav > a {
-  margin: 10px;
 }
 
 .container {

@@ -6,10 +6,12 @@
 <body>
   <h1>Tattoo Heaven</h1>
   <h2>My Collection</h2>
-  <nav class="bar">
-  <a class="btn btn-default" href="/tattoos">Go Back</a>
-  <a class="btn btn-default" href="/tattoos/my-collection/create">Create New Item</a>
-</nav>
+  <header>
+    <ul class='collection-links'>
+    <li><a href="/tattoos">Back to Browse</a></li>
+    <li><a href="/tattoos/my-collection/create">Upload New Item</a></li>
+    </ul>
+  </header>
 <div class="container">
   <%for(i=0;i<tattoos.length;i++){%>
     <div class="box">
