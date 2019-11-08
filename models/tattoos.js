@@ -29,6 +29,12 @@ date: 'August 19, 2018',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/IC8HiEp.jpg'
 },
+{artist: 'Charlie Vieregge',
+studio: 'Skin Hooked Tattoo & Body Piercing',
+date: 'November 6, 2019',
+location: 'Athens, Ohio',
+img: 'https://i.imgur.com/0L4ffro.jpg'
+},
 {artist: 'Shawn Hawks',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'January 18, 2017',
@@ -58,6 +64,36 @@ studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'September 27, 2018',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/7WQJhvt.jpg'
+},
+{artist: 'Brad Clabaugh',
+studio: 'Thunder Bunny Tattoo Parlor',
+date: 'September 16, 2018',
+location: 'Athens, Ohio',
+img: 'https://i.imgur.com/I4jtfkx.jpg'
+},
+{artist: 'Brad Clabaugh',
+studio: 'Thunder Bunny Tattoo Parlor',
+date: 'April 11, 2017',
+location: 'Athens, Ohio',
+img:'https://i.imgur.com/LE0AySj.jpg'
+},
+{artist: 'Brad Clabaugh',
+studio: 'Thunder Bunny Tattoo Parlor',
+date: 'June 20, 2018',
+location: 'Athens, Ohio',
+img: 'https://i.imgur.com/0txllBH.jpg'
+},
+{artist: 'Brad Clabaugh',
+studio: 'Thunder Bunny Tattoo Parlor',
+date: 'January 18, 2019',
+location: 'Athens, Ohio',
+img: 'https://i.imgur.com/KdYlzX4.jpg'
+},
+{artist: 'Brad Clabaugh',
+studio: 'Thunder Bunny Tattoo Parlor',
+date: 'January 5, 2019',
+location: 'Athens, Ohio',
+img:'https://i.imgur.com/xwj5Egz.jpg'
 },
 {artist: 'Garrett Hyatt',
 studio: 'Thunder Bunny Tattoo Parlor',
@@ -208,36 +244,6 @@ studio: 'Joshua Mullins Tattooing',
 date: 'June 19, 2018',
 location: 'Columbus, Ohio',
 img: 'https://i.imgur.com/eWS06yL.jpg'
-},
-{artist: 'Jenna Kerr',
-studio: 'Devil in the Detail Tattoo Studio',
-date: 'October 11, 2017',
-location: 'Stoke-on-Trent, UK',
-img:'https://i.imgur.com/3zvJYVh.jpg'
-},
-{artist: 'Jenna Kerr',
-studio: 'Devil in the Detail Tattoo Studio',
-date: 'October 13, 2017',
-location: 'Stoke-on-Trent, UK',
-img: 'https://i.imgur.com/k4Ed21k.jpg'
-},
-{artist: 'Jenna Kerr',
-studio: 'Devil in the Detail Tattoo Studio',
-date: 'September 11, 2017',
-location: 'Stoke-on-Trent, UK',
-img: 'https://i.imgur.com/f49O1Lz.jpg'
-},
-{artist: 'Jenna Kerr',
-studio: 'Devil in the Detail Tattoo Studio',
-date: 'August 31, 2017',
-location: 'Stoke-on-Trent, UK',
-img: 'https://i.imgur.com/EBeGKKU.jpg'
-},
-{artist: 'Jenna Kerr',
-studio: 'Devil in the Detail Tattoo Studio',
-date: 'August 29, 2017',
-location: 'Stoke-on-Trent, UK',
-img: 'https://i.imgur.com/eqvGiGT.jpg'
 }
 ]
 

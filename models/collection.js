@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const collectionSchema = new mongoose.Schema({
   artist: String,
   studio: String,
+  location: String,
   date: String,
   img: String,
   user: String

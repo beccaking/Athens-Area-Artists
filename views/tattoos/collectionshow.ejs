@@ -7,9 +7,10 @@
     <h1>Tattoo Heaven</h1>
     <img class="display" src="<%=tattoo.img%>" alt="<%=tattoo.artist%>"/>
     <div class="descriptors">
-      <span class="title"> Artist:</span> <%=tattoo.artist%><br/>
-      <span class="title">Studio:</span> <%=tattoo.studio%><br/>
-      <span class="title">Date:</span> <%=tattoo.date%><br/>
+      <span> Artist:</span> <%=tattoo.artist%><br/>
+      <span>Studio:</span> <%=tattoo.studio%><br/>
+      <span>Location:</span> <%=tattoo.location%><br/>
+      <span>Date:</span> <%=tattoo.date%><br/>
     <form action="/tattoos/my-collection/<%=tattoo.id%>?_method=DELETE" method="POST">
       <input class="btn btn-default remove-button" type="submit" value="Remove from collection">
     </form>

@@ -71,7 +71,7 @@ router.post('/my-collection', (req, res) => {
 router.post('/my-collection/:id', (req, res) => {
     Collection.create(tattoos[req.params.id], (error, createdElement) => {
       Collection.findByIdAndUpdate(createdElement.id, {$set: {user: req.session.username}}, (error, updatedElement) => {
-          res.redirect('/tattoos')
+          res.redirect('/tattoos/my-collection')
       })
     })
 })
