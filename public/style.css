@@ -119,10 +119,13 @@ li a {
 
 .save-btn {
   position: relative;
-  right: 165px;
+  right: 192px;
   top: 280px;
   font-size: 10px;
-  color: black;
+  font-weight: bold;
+  color:lightsteelblue;
+  background-color: black;
+  border: none;
 }
 
 .display {
@@ -181,9 +184,6 @@ top: 32px;
   right: 45px;
 }
 
-.bar {
-  margin: 0 auto;
-}
 
 .change, .create {
   margin-top: 10px;
