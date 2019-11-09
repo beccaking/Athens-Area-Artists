@@ -3,11 +3,14 @@ body {
   color: lightsteelblue;
 }
 
+h1{
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
 @media (min-width: 600px){
 
   h1 {
-    font-family: 'Permanent Marker', cursive;
-    text-align: center;
     font-size: 50px;
   }
 
@@ -84,7 +87,7 @@ body {
     position: absolute;
     z-index: 1;
   }
-  
+
   .dropdown:hover .dropdown-content {
     display: block;
   }
