@@ -14,6 +14,8 @@ Live site:
 
 ## Built with:
 * JavaScript
+* Node.js
+* jQuery
 * HTML
 * CSS
 * MongoDB
