@@ -1,7 +1,7 @@
-# tattoo-heaven
+# Tattoo Heaven
 ## Full-stack application for browsing tattoos and creating a personal collection
 Live site: 
-### [https://tattoo-heaven.herokuapp.com/]
+### https://tattoo-heaven.herokuapp.com/
 
 ## App functions:
 * A user can browse tattoos by artist, studio, or design
