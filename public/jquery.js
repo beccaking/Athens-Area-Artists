@@ -1,14 +1,35 @@
 $(() => {
 
-let boxShowing = false
+  let boxShowing = false
 
-$('.dropdown').on('click', () => {
+  $('.artistsdropdown').on('click', () => {
     if(boxShowing === true){
-      $('.dropdown-content').css('display', 'none')
+      $('.artistscontent').css('display', 'none')
       boxShowing = false
     } else {
-      $('.dropdown-content').css('display', 'block')
+      $('.artistscontent').css('display', 'block')
       boxShowing = true
     }
   })
+
+  $('.studiosdropdown').on('click', () => {
+    if(boxShowing === true){
+      $('.studioscontent').css('display', 'none')
+      boxShowing = false
+    } else {
+      $('.studioscontent').css('display', 'block')
+      boxShowing = true
+    }
+  })
+
+  $('.designsdropdown').on('click', () => {
+    if(boxShowing === true){
+      $('.designscontent').css('display', 'none')
+      boxShowing = false
+    } else {
+      $('.designscontent').css('display', 'block')
+      boxShowing = true
+    }
+  })
+
 })

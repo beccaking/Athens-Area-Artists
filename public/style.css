@@ -8,30 +8,40 @@ h1{
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+  font-family: 'Kalam', cursive;
+}
+
+header {
+  background: black;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid lightsteelblue;
+  border-bottom: 1px solid lightsteelblue;
+}
+
+.session-links {
+list-style-type: none;
+}
+
+.index-links {
+  list-style-type: none;
+}
+
 @media (min-width: 600px){
 
   h1 {
     font-size: 50px;
   }
 
-  h2 {
-    text-align: center;
-    font-family: 'Kalam', cursive;
-  }
-
   header {
-    background: black;
     height: 70px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    border-top: 1px solid lightsteelblue;
-    border-bottom: 1px solid lightsteelblue;
     padding-left: 30px;
   }
 
   .session-links{
-  list-style-type: none;
   position: absolute;
   left: 80%;
   width: 100%;
@@ -39,7 +49,6 @@ h1{
   }
 
   .index-links {
-    list-style-type: none;
     position: absolute;
     left: 90%;
     width: 100%;
@@ -89,6 +98,30 @@ h1{
   }
 
   .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .artistscontent {
+    display: none;
+  }
+
+  .artistsdropdown:hover .artistscontent {
+    display: block;
+  }
+
+  .studioscontent {
+    display: none;
+  }
+
+  .studiosdropdown:hover .artistscontent {
+    display: block;
+  }
+
+  .designscontent {
+    display: none;
+  }
+
+  .designsdropdown:hover .artistscontent {
     display: block;
   }
 
