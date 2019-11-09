@@ -38,6 +38,20 @@
       <a href="/tattoos/joshua-mullins">Joshua Mullins Tattooing</a>
     </div>
   </div>
+  <div class="dropdown">
+    <span class="dropbtn">Designs<span class="caret">
+    <div class="dropdown-content">
+      <a href="/tattoos/skeletons">Skeletons</a><br/>
+      <hr>
+      <a href="/tattoos/nature">Nature</a><br/>
+      <hr>
+      <a href="/tattoos/abstract">Abstract</a>
+      <hr>
+      <a href="/tattoos/sci-fi">Sci-Fi</a><br/>
+      <hr>
+      <a href="/tattoos/religious">Religious</a><br/>
+    </div>
+  </div>
   <ul class="index-links">
     <li><a class="my-collection" href='/tattoos/my-collection'>My Collection</a></li>
     <li><form action="/tattoos/?_method=DELETE" method="POST">
@@ -48,10 +62,10 @@
   <div class='container'>
   <%for(i=0;i<allTattoos.length;i++){%>
     <div class='box'>
-      <a href="/tattoos/show/<%=i%>"><img class='img-thumbnail' src="<%=allTattoos[i].img%>" alt="<%=allTattoos[i].artist%>"></a>
+      <a href="/tattoos/show/<%=allTattoos[i].index%>"><img class='img-thumbnail' src="<%=allTattoos[i].img%>" alt="<%=allTattoos[i].artist%>"></a>
     </div>
     <div class="save">
-      <form action="/tattoos/my-collection/<%=i%>" method="POST">
+      <form action="/tattoos/my-collection/<%=allTattoos[i].index%>" method="POST">
           <input class="save-btn" type="submit" value="Save to collection">
       </form>
     </div>

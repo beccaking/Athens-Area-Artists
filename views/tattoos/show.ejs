@@ -11,10 +11,9 @@
     <span>Studio:</span> <%=tattoo.studio%><br/>
     <span>Location:</span> <%=tattoo.location%><br/>
     <span>Date:</span> <%=tattoo.date%><br/>
-    <form action="/tattoos/my-collection/<%=index%>" method="POST">
+    <form action="/tattoos/my-collection/<%=tattoo.id%>" method="POST">
         <input class="btn btn-default save-button" type="submit" value="Save to collection">
     </form>
-    <a class="btn btn-default back" href="/tattoos">Back</a>
     </div>
       <% include ../partials/footer.ejs%>
   </body>

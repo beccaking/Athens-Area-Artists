@@ -4,287 +4,328 @@ const tattoos = [
   date: 'October 3, 2018',
   location: 'Athens, Ohio',
   img: 'https://i.imgur.com/ABjI5hM.jpg',
-  design: ['Portrait', 'Skeleton']
+  design: ['Portrait', 'Skeleton'],
+  index: '1'
   },
   {artist: 'Charlie Vieregge',
   studio: 'Skin Hooked Tattoo & Body Piercing',
   date: 'July 14, 2018',
   location: 'Athens, Ohio',
   img: 'https://i.imgur.com/8d4LbnH.jpg',
-  design: ['Nature', 'Skeleton']
+  design: ['Nature', 'Skeleton'],
+  index: '2'
 },
 {artist: 'Charlie Vieregge',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'November 7, 2018',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/jkS5vf9.png',
-design: ['Nature', 'Skeleton']
+design: ['Nature', 'Skeleton'],
+index: '3'
 },
 {artist: 'Charlie Vieregge',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'October 23, 2018',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/RBtT62n.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '4'
 },
 {artist: 'Charlie Vieregge',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'August 19, 2018',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/IC8HiEp.jpg',
-design: ['Skeleton', 'Nature']
+design: ['Skeleton', 'Nature'],
+index: '5'
 },
 {artist: 'Charlie Vieregge',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'November 6, 2019',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/0L4ffro.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '6'
 },
 {artist: 'Shawn Hawks',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'January 18, 2017',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/d40yHtO.jpg',
-design: ['Skeleton', 'Nature']
+design: ['Skeleton', 'Nature'],
+index: '7'
 },
 {artist: 'Shawn Hawks',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'July 14, 2018',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/afY8Ech.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '8'
 },
 {artist: 'Shawn Hawks',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'August 25, 2018',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/ATxleAO.jpg',
-design: ['Skeleton']
+design: ['Skeleton'],
+index: '9'
 },
 {artist: 'Shawn Hawks',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'September 12, 2018',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/6vl0gs1.jpg',
-design: ['Abstract']
+design: ['Abstract'],
+index: '10'
 },
 {artist: 'Shawn Hawks',
 studio: 'Skin Hooked Tattoo & Body Piercing',
 date: 'September 27, 2018',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/7WQJhvt.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '11'
 },
 {artist: 'Brad Clabaugh',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'September 16, 2018',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/I4jtfkx.jpg',
-design: ['Abstract']
+design: ['Abstract'],
+index: '12'
 },
 {artist: 'Brad Clabaugh',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'April 11, 2017',
 location: 'Athens, Ohio',
 img:'https://i.imgur.com/LE0AySj.jpg',
-design: ['Sci-Fi']
+design: ['Sci-Fi'],
+index: '13'
 },
 {artist: 'Brad Clabaugh',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'June 20, 2018',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/0txllBH.jpg',
-design: ['Abstract']
+design: ['Abstract'],
+index: '14'
 },
 {artist: 'Brad Clabaugh',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'January 18, 2019',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/KdYlzX4.jpg',
-design: ['Sci-Fi']
+design: ['Sci-Fi'],
+index: '15'
 },
 {artist: 'Brad Clabaugh',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'January 5, 2019',
 location: 'Athens, Ohio',
 img:'https://i.imgur.com/xwj5Egz.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '16'
 },
 {artist: 'Garrett Hyatt',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'December 8, 2015',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/fbXTaow.jpg',
-design: ['Sci-Fi']
+design: ['Sci-Fi'],
+index: '17'
 },
 {artist: 'Garrett Hyatt',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'January 24, 2017',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/aKYCTaJ.jpg',
-design: ['Abstract']
+design: ['Abstract'],
+index: '18'
 },
 {artist: 'Garrett Hyatt',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'January 24, 2017',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/09hunYU.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '19'
 },
 {artist: 'Garrett Hyatt',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'December 8, 2015',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/UTwgfQ0.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '20'
 },
 {artist: 'Garrett Hyatt',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'December 8, 2015',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/R8Jt37l.jpg',
-design: ['Skeleton']
+design: ['Skeleton'],
+index: '21'
 },
 {artist: 'Bobby Avalos',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'November 8, 2016',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/WzhD6Dw.jpg',
-design: ['Abstract']
+design: ['Nature'],
+index: '22'
 },
 {artist: 'Bobby Avalos',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'July 5, 2016',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/6aNlhGk.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '23'
 },
 {artist: 'Bobby Avalos',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'July 5, 2016',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/49Ark7d.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '24'
 },
 {artist: 'Bobby Avalos',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'July 5, 2016',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/wshKf6q.jpg',
-design: ['Skeleton']
+design: ['Skeleton'],
+index: '25'
 },
 {artist: 'Bobby Avalos',
 studio: 'Thunder Bunny Tattoo Parlor',
 date: 'November 8, 2016',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/uYLKBYv.jpg',
-design: ['Religious']
+design: ['Religious'],
+index: '26'
 },
 {artist: 'Eric Pierce',
 studio: 'Decorative Injections Tattooing & Body Piercing',
 date: 'January 13, 2013',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/DUuFISn.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '27'
 },
 {artist: 'Eric Pierce',
 studio: 'Decorative Injections Tattooing & Body Piercing',
 date: 'January 12, 2013',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/5P5QeG1.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '28'
 },
 {artist: 'Eric Pierce',
 studio: 'Decorative Injections Tattooing & Body Piercing',
 date: 'January 12, 2013',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/YJHFqkJ.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '29'
 },
 {artist: 'Eric Pierce',
 studio: 'Decorative Injections Tattooing & Body Piercing',
 date: 'January 12, 2013',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/13Foo8W.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '30'
 },
 {artist: 'Eric Pierce',
 studio: 'Decorative Injections Tattooing & Body Piercing',
 date: 'January 12, 2013',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/hdnB8CF.jpg',
-design: ['Religious']
+design: ['Religious'],
+index: '31'
 },
 {artist: 'Jim Kisor',
 studio: 'Decorative Injections Tattooing & Body Piercing',
 date: 'July 4, 2013',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/oKFDdTQ.jpg',
-design: ['Abstract']
+design: ['Abstract'],
+index: '32'
 },
 {artist: 'Jim Kisor',
 studio: 'Decorative Injections Tattooing & Body Piercing',
 date: 'February 22, 2013',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/uBFa024.jpg',
-design: ['Religious']
+design: ['Religious'],
+index: '33'
 },
 {artist: 'Jim Kisor',
 studio: 'Decorative Injections Tattooing & Body Piercing',
 date: 'January 31, 2012',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/esnBogy.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '34'
 },
 {artist: 'Jim Kisor',
 studio: 'Decorative Injections Tattooing & Body Piercing',
 date: 'February 22, 2013',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/qGf4xMm.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '35'
 },
 {artist: 'Jim Kisor',
 studio: 'Decorative Injections Tattooing & Body Piercing',
 date: 'April 2, 2013',
 location: 'Athens, Ohio',
 img: 'https://i.imgur.com/SGdAjLH.jpg',
-design: ['Portrait']
+design: ['Portrait'],
+index: '36'
 },
 {artist: 'Joshua Mullins',
 studio: 'Joshua Mullins Tattooing',
 date: 'June 19, 2018',
 location: 'Columbus, Ohio',
 img: 'https://i.imgur.com/kDvQxIc.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '37'
 },
 {artist: 'Joshua Mullins',
 studio: 'Joshua Mullins Tattooing',
 date: 'June 19, 2018',
 location: 'Columbus, Ohio',
 img: 'https://i.imgur.com/3M8FdDX.jpg',
-design: ['Nature']
+design: ['Nature'],
+index: '38'
 },
 {artist: 'Joshua Mullins',
 studio: 'Joshua Mullins Tattooing',
 date: 'November 24, 2018',
 location: 'Columbus, Ohio',
 img: 'https://i.imgur.com/ouImklq.jpg',
-design: ['Nature', 'Abstract']
+design: ['Nature', 'Abstract'],
+index: '39'
 },
 {artist: 'Joshua Mullins',
 studio: 'Joshua Mullins Tattooing',
 date: 'June 19, 2018',
 location: 'Columbus, Ohio',
 img: 'https://i.imgur.com/pf08HMh.jpg',
-design: ['Nature', 'Abstract']
+design: ['Nature', 'Abstract'],
+index: '40'
 },
 {artist: 'Joshua Mullins',
 studio: 'Joshua Mullins Tattooing',
 date: 'June 19, 2018',
 location: 'Columbus, Ohio',
 img: 'https://i.imgur.com/eWS06yL.jpg',
-design: ['Nature, Abstract']
+design: ['Nature, Abstract'],
+index: '41'
 }
 ]
 

@@ -46,6 +46,46 @@ const tattoos = require('./models/tattoos.js')
 
 //Routes
 
+app.get('/religious', (req, res) => {
+  const religiousTattoos = tattoos.filter(tattoo => (tattoo.design[0] === 'Religious' || tattoo.design[1] === 'Religious'))
+    res.render('index.ejs', {
+    allTattoos: religiousTattoos,
+    tabTitle: 'Religious'
+  })
+})
+
+app.get('/sci-fi', (req, res) => {
+  const scifiTattoos = tattoos.filter(tattoo => (tattoo.design[0] === 'Sci-Fi' || tattoo.design[1] === 'Sci-Fi'))
+    res.render('index.ejs', {
+    allTattoos: scifiTattoos,
+    tabTitle: 'Sci-Fi'
+  })
+})
+
+app.get('/abstract', (req, res) => {
+  const abstractTattoos = tattoos.filter(tattoo => (tattoo.design[0] === 'Abstract' || tattoo.design[1] === 'Abstract'))
+    res.render('index.ejs', {
+    allTattoos: abstractTattoos,
+    tabTitle: 'Abstract'
+  })
+})
+
+app.get('/nature', (req, res) => {
+  const natureTattoos = tattoos.filter(tattoo => (tattoo.design[0] === 'Nature' || tattoo.design[1] === 'Nature'))
+    res.render('index.ejs', {
+    allTattoos: natureTattoos,
+    tabTitle: 'Nature'
+  })
+})
+
+app.get('/skeletons', (req, res) => {
+  const skeletonTattoos = tattoos.filter(tattoo => (tattoo.design[0] === 'Skeleton' || tattoo.design[1] === 'Skeleton'))
+    res.render('index.ejs', {
+    allTattoos: skeletonTattoos,
+    tabTitle: 'Skeletons'
+  })
+})
+
 app.get('/charlie', (req, res) => {
   const charlieTattoos = tattoos.filter(tattoo => tattoo.artist === 'Charlie Vieregge')
     res.render('index.ejs', {
@@ -142,10 +182,11 @@ app.get('/joshua-mullins', (req, res) => {
   })
 })
 
-app.get('/show/:tattooIndex', (req, res) => {
+app.get('/show/:index', (req, res) => {
+  const element = tattoos.filter(tattoo => tattoo.index === req.params.index)
   res.render('show.ejs', {
-    tattoo: tattoos[req.params.tattooIndex],
-    tabTitle: tattoos[req.params.tattooIndex].artist
+    tattoo: element[0],
+    tabTitle: element[0].artist
   })
 })
 

@@ -5,6 +5,71 @@ const Collection = require('../models/collection.js')
 
 //Routes for a logged-in user
 
+router.get('/religious', (req, res) => {
+  const religiousTattoos = tattoos.filter(tattoo => (tattoo.design[0] === 'Religious' || tattoo.design[1] === 'Religious'))
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: religiousTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/sci-fi', (req, res) => {
+  const scifiTattoos = tattoos.filter(tattoo => (tattoo.design[0] === 'Sci-Fi' || tattoo.design[1] === 'Sci-Fi'))
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: scifiTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/abstract', (req, res) => {
+  const abstractTattoos = tattoos.filter(tattoo => (tattoo.design[0] === 'Abstract' || tattoo.design[1] === 'Abstract'))
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: abstractTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/nature', (req, res) => {
+  const natureTattoos = tattoos.filter(tattoo => (tattoo.design[0] === 'Nature' || tattoo.design[1] === 'Nature'))
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: natureTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
+router.get('/skeletons', (req, res) => {
+  const skeletonTattoos = tattoos.filter(tattoo => (tattoo.design[0] === 'Skeleton' || tattoo.design[1] === 'Skeleton'))
+  if(req.session.username){
+    res.render('tattoos/index.ejs', {
+      allTattoos: skeletonTattoos,
+      tabTitle: req.session.username
+    })
+  } else {
+    flag=false
+    res.redirect('/')
+  }
+})
+
 router.get('/joshua-mullins', (req, res) => {
   const joshuaTattoos = tattoos.filter(tattoo => tattoo.studio === 'Joshua Mullins Tattooing')
   if(req.session.username){
@@ -208,10 +273,10 @@ router.get('/my-collection/show/:id', (req, res) => {
 })
 //Index show page with save button
 router.get('/show/:id', (req, res) => {
+  const element = tattoos.filter(tattoo => tattoo.index === req.params.id)
   res.render('tattoos/show.ejs', {
-    tattoo: tattoos[req.params.id],
-    index: req.params.id,
-    tabTitle: tattoos[req.params.id].artist
+    tattoo: element[0],
+    tabTitle: element[0].artist
   })
 })
 //Create route, brand new
@@ -224,8 +289,11 @@ router.post('/my-collection', (req, res) => {
   })
 //Create route, save from index page
 router.post('/my-collection/:id', (req, res) => {
-    Collection.create(tattoos[req.params.id], (error, createdElement) => {
+  const tattoo = tattoos.filter(tattoo => tattoo.index === req.params.id)
+    Collection.create(tattoo, (error, createdElement) => {
+      console.log(createdElement)
       Collection.findByIdAndUpdate(createdElement.id, {$set: {user: req.session.username}}, (error, updatedElement) => {
+        console.log(updatedElement)
           res.redirect('/tattoos/my-collection')
       })
     })

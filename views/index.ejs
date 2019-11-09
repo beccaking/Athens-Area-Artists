@@ -38,6 +38,20 @@
       <a href="/joshua-mullins">Joshua Mullins Tattooing</a>
     </div>
   </div>
+  <div class="dropdown">
+    <span class="dropbtn">Designs<span class="caret">
+    <div class="dropdown-content">
+      <a href="/skeletons">Skeletons</a><br/>
+      <hr>
+      <a href="/nature">Nature</a><br/>
+      <hr>
+      <a href="/abstract">Abstract</a>
+      <hr>
+      <a href="/sci-fi">Sci-Fi</a><br/>
+      <hr>
+      <a href="/religious">Religious</a>
+    </div>
+  </div>
   <ul class="session-links">
     <li><a href='/sessions/new'>Log In</a></li>
     <li><a href='/users/new'>Register</a></li>
@@ -47,7 +61,7 @@
   <div class='container'>
     <%for(i=0;i<allTattoos.length;i++){%>
       <div class='box'>
-        <a href="/show/<%=i%>"><img class="img-thumbnail" src="<%=allTattoos[i].img%>" alt="<%=allTattoos[i].artist%>"></a>
+        <a href="/show/<%=allTattoos[i].index%>"><img class="img-thumbnail" src="<%=allTattoos[i].img%>" alt="<%=allTattoos[i].artist%>"></a>
       </div>
       <%}%>
     </div>
