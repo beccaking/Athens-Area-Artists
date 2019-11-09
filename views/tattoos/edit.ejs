@@ -5,17 +5,16 @@
 </head>
 <body>
   <h1>Tattoo Heaven</h1>
-  <img class="display" src="<%=tattoo.img%>" alt="<%=tattoo.artist%>">
-  <div class="descriptors">
+  <div class="editform">
   <form action="/tattoos/my-collection/<%=tattoo.id%>/edit?_method=PUT" method="POST">
-    Artist: <input type="text" name="artist" value="<%=tattoo.artist%>"><br/>
-    Studio: <input type="text" name="studio" value="<%=tattoo.studio%>"><br/>
-    Date: <input type="text" name="date" value="<%=tattoo.date%>"><br/>
-    Image URL: <input type="text" name="img" value="<%=tattoo.img%>">
+    <span class='title'>Artist:</span> <input type="text" name="artist" value="<%=tattoo.artist%>"><br/>
+    <span class='title'>Studio:</span> <input type="text" name="studio" value="<%=tattoo.studio%>"><br/>
+    <span class='title'>Date:</span> <input type="text" name="date" value="<%=tattoo.date%>"><br/>
+    <span class='title'>Image URL:</span> <input type="text" name="img" value="<%=tattoo.img%>">
     <input class="btn btn-default change" type="submit" value="Make Changes">
   </form>
-  <a class="btn btn-default back" href="/tattoos/my-collection">Back</a>
 </div>
+<img class="display editimg" src="<%=tattoo.img%>" alt="<%=tattoo.artist%>">
   <% include ../partials/footer.ejs%>
 </body>
 </html>

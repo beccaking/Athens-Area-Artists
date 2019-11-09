@@ -213,11 +213,28 @@ top: 32px;
   padding: 20px;
 }
 
-.user, .pass {
+.editform {
+  font-family: 'Kalam', cursive;
+  text-align: center;
+  position: relative;
+  color: black;
+  top: 20px;
+  border: 2px solid lightsteelblue;
+  width: 300px;
+  position: relative;
+  left: 36%;
+  padding: 20px;
+}
+
+.editimg {
+  margin-top: 60px;
+}
+
+.title {
   color: lightsteelblue;
 }
 
-.username {
+.input {
   margin: 10px;
 }
 
