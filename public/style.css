@@ -1,3 +1,4 @@
+/* For mobile/Default */
 body {
   background: black;
   color: lightsteelblue;
@@ -29,6 +30,250 @@ list-style-type: none;
   list-style-type: none;
 }
 
+.collection-links {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  padding: 14px 20px;
+  font-weight: bold;
+}
+
+li a {
+  font-weight: bold;
+  color: lightsteelblue;
+}
+
+.dropdown {
+  float: left;
+  padding: 10px 15px;
+}
+
+.dropbtn {
+  background-color: black;
+  color: lightsteelblue;
+  border: none;
+  font-weight: bold;
+  width: 100px;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: black;
+  border-top: none;
+  padding: 10px 20px;
+  width: 150px;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.artistscontent {
+  display: none;
+}
+
+.artistsdropdown:hover .artistscontent {
+  display: block;
+}
+
+.studioscontent {
+  display: none;
+}
+
+.studiosdropdown:hover .artistscontent {
+  display: block;
+}
+
+.designscontent {
+  display: none;
+}
+
+.designsdropdown:hover .artistscontent {
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  width: 300px;
+  height: 370px;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-thumbnail {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  background-color: white;
+  border: 1px solid lightsteelblue;
+}
+
+.save {
+  width: 0px;
+  position: relative;
+  top: 60px;
+}
+
+.save-btn {
+  position: relative;
+  right: 192px;
+  top: 280px;
+  font-size: 10px;
+  font-weight: bold;
+  color:lightsteelblue;
+  background-color: black;
+  border: none;
+}
+
+.display {
+  width: 330px;
+  display: flex;
+  margin: 50px auto;
+  border: 2px solid lightsteelblue;
+}
+
+.descriptors {
+  font-family: 'Kalam', cursive;
+  position: absolute;
+  width: 270px;
+  bottom: 270px;
+  left: 100px;
+}
+
+.back {
+  margin-top: 15px;
+  padding: 2px;
+}
+
+.save-button, .remove-button {
+  margin-top: 15px;
+  padding: 2px;
+}
+
+.logout {
+  margin-top: 10px;
+  background: black;
+  border: none;
+}
+
+.my-collection {
+position: relative;
+right: 150px;
+top: 32px;
+}
+
+.buttons {
+  width: 0px;
+  position: relative;
+  right: 165px;
+  top: 350px;
+  font-size: 10px;
+  color: black;
+}
+
+.edit {
+  padding: 2px;
+  font-size: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  position: relative;
+  right: 80px;
+  bottom: 16px;
+}
+
+.remove {
+  position: relative;
+  right: 10px;
+  background-color: black;
+  color: lightsteelblue;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+.change, .create {
+  margin-top: 10px;
+  padding: 2px;
+}
+
+.form {
+  font-family: 'Kalam', cursive;
+  text-align: center;
+  position: relative;
+  color: black;
+  top: 40px;
+  border: 2px solid lightsteelblue;
+  width: 300px;
+  position: relative;
+  left: 36%;
+  padding: 20px;
+}
+
+.editform {
+  font-family: 'Kalam', cursive;
+  text-align: center;
+  position: relative;
+  color: black;
+  top: 20px;
+  border: 2px solid lightsteelblue;
+  width: 300px;
+  position: relative;
+  left: 36%;
+  padding: 20px;
+}
+
+.editimg {
+  margin-top: 60px;
+}
+
+.title {
+  color: lightsteelblue;
+}
+
+.input {
+  margin: 10px;
+}
+
+.login {
+  margin: 10px;
+  margin-top: 25px;
+  padding: 2px;
+  position: relative;
+  left: 73px;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: lightsteelblue;
+}
+
+.error {
+  font-family: Arial;
+  color: red;
+}
+
+.spaceholder {
+  height: 230px;
+}
+
+footer {
+  margin-top: 150px;
+}
+
+/* For desktop */
 @media (min-width: 600px){
 
   h1 {
@@ -56,7 +301,6 @@ list-style-type: none;
   }
 
   .collection-links {
-    list-style-type: none;
     position: absolute;
     left: 35%;
     width: 100%;
@@ -64,89 +308,32 @@ list-style-type: none;
   }
 
   li {
-    display: inline;
     padding: 14px 20px;
-    font-weight: bold;
-  }
-
-  li a {
-    font-weight: bold;
-    color: lightsteelblue;
   }
 
   .dropdown {
-    float: left;
     padding: 10px 15px;
   }
 
   .dropbtn {
-    background-color: black;
-    color: lightsteelblue;
-    border: none;
-    font-weight: bold;
     width: 100px;
   }
 
   .dropdown-content {
-    display: none;
-    background-color: black;
-    border-top: none;
     padding: 10px 20px;
     width: 150px;
     position: absolute;
     z-index: 1;
   }
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  .artistscontent {
-    display: none;
-  }
-
-  .artistsdropdown:hover .artistscontent {
-    display: block;
-  }
-
-  .studioscontent {
-    display: none;
-  }
-
-  .studiosdropdown:hover .artistscontent {
-    display: block;
-  }
-
-  .designscontent {
-    display: none;
-  }
-
-  .designsdropdown:hover .artistscontent {
-    display: block;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
-    justify-content: center;
-  }
-
   .box {
-    display: flex;
     width: 300px;
     height: 370px;
-    justify-content: center;
-    align-items: center;
   }
 
   .img-thumbnail {
     height: 300px;
     width: 200px;
-    object-fit: cover;
-    background-color: white;
-    border: 1px solid lightsteelblue;
   }
 
   .save {
@@ -160,10 +347,6 @@ list-style-type: none;
     right: 192px;
     top: 280px;
     font-size: 10px;
-    font-weight: bold;
-    color:lightsteelblue;
-    background-color: black;
-    border: none;
   }
 
   .display {
@@ -174,7 +357,6 @@ list-style-type: none;
   }
 
   .descriptors {
-    font-family: 'Kalam', cursive;
     position: absolute;
     width: 270px;
     bottom: 270px;
@@ -193,8 +375,6 @@ list-style-type: none;
 
   .logout {
     margin-top: 10px;
-    background: black;
-    border: none;
   }
 
   .my-collection {
@@ -209,14 +389,12 @@ list-style-type: none;
     right: 165px;
     top: 350px;
     font-size: 10px;
-    color: black;
   }
 
   .edit {
     padding: 2px;
     font-size: 10px;
     font-size: 10px;
-    font-weight: bold;
     position: relative;
     right: 80px;
     bottom: 16px;
@@ -225,11 +403,7 @@ list-style-type: none;
   .remove {
     position: relative;
     right: 10px;
-    background-color: black;
-    color: lightsteelblue;
-    border: none;
     font-size: 10px;
-    font-weight: bold;
   }
 
 
@@ -239,12 +413,7 @@ list-style-type: none;
   }
 
   .form {
-    font-family: 'Kalam', cursive;
-    text-align: center;
-    position: relative;
-    color: black;
     top: 40px;
-    border: 2px solid lightsteelblue;
     width: 300px;
     position: relative;
     left: 36%;
@@ -252,12 +421,7 @@ list-style-type: none;
   }
 
   .editform {
-    font-family: 'Kalam', cursive;
-    text-align: center;
-    position: relative;
-    color: black;
     top: 20px;
-    border: 2px solid lightsteelblue;
     width: 300px;
     position: relative;
     left: 36%;
@@ -266,10 +430,6 @@ list-style-type: none;
 
   .editimg {
     margin-top: 60px;
-  }
-
-  .title {
-    color: lightsteelblue;
   }
 
   .input {
@@ -282,16 +442,6 @@ list-style-type: none;
     padding: 2px;
     position: relative;
     left: 73px;
-  }
-
-  a, a:hover {
-    text-decoration: none;
-    color: lightsteelblue;
-  }
-
-  .error {
-    font-family: Arial;
-    color: red;
   }
 
   .spaceholder {
