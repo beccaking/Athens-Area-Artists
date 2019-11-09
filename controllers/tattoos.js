@@ -289,11 +289,9 @@ router.post('/my-collection', (req, res) => {
   })
 //Create route, save from index page
 router.post('/my-collection/:id', (req, res) => {
-  const tattoo = tattoos.filter(tattoo => tattoo.index === req.params.id)
-    Collection.create(tattoo, (error, createdElement) => {
-      console.log(createdElement)
-      Collection.findByIdAndUpdate(createdElement.id, {$set: {user: req.session.username}}, (error, updatedElement) => {
-        console.log(updatedElement)
+  const element = tattoos.filter(tattoo => tattoo.index === req.params.id)
+    Collection.create(element, (error, createdElement) => {
+      Collection.findByIdAndUpdate(createdElement[0].id, {$set: {user: req.session.username}}, (error, updatedElement) => {
           res.redirect('/tattoos/my-collection')
       })
     })

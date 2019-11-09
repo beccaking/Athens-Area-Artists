@@ -6,6 +6,7 @@ const collectionSchema = new mongoose.Schema({
   location: String,
   date: String,
   img: String,
+  index: String,
   user: String
 })
 
