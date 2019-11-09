@@ -191,6 +191,7 @@ app.get('/show/:index', (req, res) => {
 })
 
 app.get('/', (req, res) => {
+  mistake = false
   flag = false
   res.render('index.ejs', {
     allTattoos: tattoos,
