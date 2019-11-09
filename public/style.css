@@ -3,263 +3,266 @@ body {
   color: lightsteelblue;
 }
 
-h1 {
-  font-family: 'Permanent Marker', cursive;
-  text-align: center;
-  font-size: 50px;
-}
+@media (min-width: 600px){
 
-h2 {
-  text-align: center;
-  font-family: 'Kalam', cursive;
-}
+  h1 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 50px;
+  }
 
-header {
-  background: black;
-  height: 70px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  border-top: 1px solid lightsteelblue;
-  border-bottom: 1px solid lightsteelblue;
-  padding-left: 30px;
-}
+  h2 {
+    text-align: center;
+    font-family: 'Kalam', cursive;
+  }
 
-.session-links{
-list-style-type: none;
-position: absolute;
-left: 80%;
-width: 100%;
-padding: 20px 20px;
-}
+  header {
+    background: black;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid lightsteelblue;
+    border-bottom: 1px solid lightsteelblue;
+    padding-left: 30px;
+  }
 
-.index-links {
+  .session-links{
   list-style-type: none;
   position: absolute;
-  left: 90%;
+  left: 80%;
   width: 100%;
   padding: 20px 20px;
-}
+  }
 
-.collection-links {
-  list-style-type: none;
-  position: absolute;
-  left: 35%;
-  width: 100%;
-  padding: 20px 20px;
-}
+  .index-links {
+    list-style-type: none;
+    position: absolute;
+    left: 90%;
+    width: 100%;
+    padding: 20px 20px;
+  }
 
-li {
-  display: inline;
-  padding: 14px 20px;
-  font-weight: bold;
-}
+  .collection-links {
+    list-style-type: none;
+    position: absolute;
+    left: 35%;
+    width: 100%;
+    padding: 20px 20px;
+  }
 
-li a {
-  font-weight: bold;
-  color: lightsteelblue;
-}
+  li {
+    display: inline;
+    padding: 14px 20px;
+    font-weight: bold;
+  }
 
-.dropdown {
-  float: left;
-  padding: 10px 15px;
-}
+  li a {
+    font-weight: bold;
+    color: lightsteelblue;
+  }
 
-.dropbtn {
-  background-color: black;
-  color: lightsteelblue;
-  border: none;
-  font-weight: bold;
-  width: 100px;
-}
+  .dropdown {
+    float: left;
+    padding: 10px 15px;
+  }
 
-.dropdown-content {
-  display: none;
-  background-color: black;
-  border-top: none;
-  padding: 10px 20px;
-  width: 150px;
-  position: absolute;
-  z-index: 1;
-}
+  .dropbtn {
+    background-color: black;
+    color: lightsteelblue;
+    border: none;
+    font-weight: bold;
+    width: 100px;
+  }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+  .dropdown-content {
+    display: none;
+    background-color: black;
+    border-top: none;
+    padding: 10px 20px;
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: auto;
-  justify-content: center;
-}
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+  }
 
-.box {
-  display: flex;
-  width: 300px;
-  height: 370px;
-  justify-content: center;
-  align-items: center;
-}
+  .box {
+    display: flex;
+    width: 300px;
+    height: 370px;
+    justify-content: center;
+    align-items: center;
+  }
 
-.img-thumbnail {
-  height: 300px;
-  width: 200px;
-  object-fit: cover;
-  background-color: white;
-  border: 1px solid lightsteelblue;
-}
+  .img-thumbnail {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    background-color: white;
+    border: 1px solid lightsteelblue;
+  }
 
-.save {
-  width: 0px;
+  .save {
+    width: 0px;
+    position: relative;
+    top: 60px;
+  }
+
+  .save-btn {
+    position: relative;
+    right: 192px;
+    top: 280px;
+    font-size: 10px;
+    font-weight: bold;
+    color:lightsteelblue;
+    background-color: black;
+    border: none;
+  }
+
+  .display {
+    width: 330px;
+    display: flex;
+    margin: 50px auto;
+    border: 2px solid lightsteelblue;
+  }
+
+  .descriptors {
+    font-family: 'Kalam', cursive;
+    position: absolute;
+    width: 270px;
+    bottom: 270px;
+    left: 100px;
+  }
+
+  .back {
+    margin-top: 15px;
+    padding: 2px;
+  }
+
+  .save-button, .remove-button {
+    margin-top: 15px;
+    padding: 2px;
+  }
+
+  .logout {
+    margin-top: 10px;
+    background: black;
+    border: none;
+  }
+
+  .my-collection {
   position: relative;
-  top: 60px;
-}
+  right: 150px;
+  top: 32px;
+  }
 
-.save-btn {
-  position: relative;
-  right: 192px;
-  top: 280px;
-  font-size: 10px;
-  font-weight: bold;
-  color:lightsteelblue;
-  background-color: black;
-  border: none;
-}
+  .buttons {
+    width: 0px;
+    position: relative;
+    right: 165px;
+    top: 350px;
+    font-size: 10px;
+    color: black;
+  }
 
-.display {
-  width: 330px;
-  display: flex;
-  margin: 50px auto;
-  border: 2px solid lightsteelblue;
-}
+  .edit {
+    padding: 2px;
+    font-size: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    right: 80px;
+    bottom: 16px;
+  }
 
-.descriptors {
-  font-family: 'Kalam', cursive;
-  position: absolute;
-  width: 270px;
-  bottom: 270px;
-  left: 100px;
-}
-
-.back {
-  margin-top: 15px;
-  padding: 2px;
-}
-
-.save-button, .remove-button {
-  margin-top: 15px;
-  padding: 2px;
-}
-
-.logout {
-  margin-top: 10px;
-  background: black;
-  border: none;
-}
-
-.my-collection {
-position: relative;
-right: 150px;
-top: 32px;
-}
-
-.buttons {
-  width: 0px;
-  position: relative;
-  right: 165px;
-  top: 350px;
-  font-size: 10px;
-  color: black;
-}
-
-.edit {
-  padding: 2px;
-  font-size: 10px;
-  font-size: 10px;
-  font-weight: bold;
-  position: relative;
-  right: 80px;
-  bottom: 16px;
-}
-
-.remove {
-  position: relative;
-  right: 10px;
-  background-color: black;
-  color: lightsteelblue;
-  border: none;
-  font-size: 10px;
-  font-weight: bold;
-}
+  .remove {
+    position: relative;
+    right: 10px;
+    background-color: black;
+    color: lightsteelblue;
+    border: none;
+    font-size: 10px;
+    font-weight: bold;
+  }
 
 
-.change, .create {
-  margin-top: 10px;
-  padding: 2px;
-}
+  .change, .create {
+    margin-top: 10px;
+    padding: 2px;
+  }
 
-.form {
-  font-family: 'Kalam', cursive;
-  text-align: center;
-  position: relative;
-  color: black;
-  top: 40px;
-  border: 2px solid lightsteelblue;
-  width: 300px;
-  position: relative;
-  left: 36%;
-  padding: 20px;
-}
+  .form {
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    position: relative;
+    color: black;
+    top: 40px;
+    border: 2px solid lightsteelblue;
+    width: 300px;
+    position: relative;
+    left: 36%;
+    padding: 20px;
+  }
 
-.editform {
-  font-family: 'Kalam', cursive;
-  text-align: center;
-  position: relative;
-  color: black;
-  top: 20px;
-  border: 2px solid lightsteelblue;
-  width: 300px;
-  position: relative;
-  left: 36%;
-  padding: 20px;
-}
+  .editform {
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    position: relative;
+    color: black;
+    top: 20px;
+    border: 2px solid lightsteelblue;
+    width: 300px;
+    position: relative;
+    left: 36%;
+    padding: 20px;
+  }
 
-.editimg {
-  margin-top: 60px;
-}
+  .editimg {
+    margin-top: 60px;
+  }
 
-.title {
-  color: lightsteelblue;
-}
+  .title {
+    color: lightsteelblue;
+  }
 
-.input {
-  margin: 10px;
-}
+  .input {
+    margin: 10px;
+  }
 
-.login {
-  margin: 10px;
-  margin-top: 25px;
-  padding: 2px;
-  position: relative;
-  left: 73px;
-}
+  .login {
+    margin: 10px;
+    margin-top: 25px;
+    padding: 2px;
+    position: relative;
+    left: 73px;
+  }
 
-a, a:hover {
-  text-decoration: none;
-  color: lightsteelblue;
-}
+  a, a:hover {
+    text-decoration: none;
+    color: lightsteelblue;
+  }
 
-.error {
-  font-family: Arial;
-  color: red;
-}
+  .error {
+    font-family: Arial;
+    color: red;
+  }
 
-.spaceholder {
-  height: 230px;
-}
+  .spaceholder {
+    height: 230px;
+  }
 
-footer {
-  margin-top: 150px;
+  footer {
+    margin-top: 150px;
+  }
 }
