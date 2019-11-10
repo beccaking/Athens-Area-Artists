@@ -24,6 +24,13 @@ header {
 
 .session-links {
 list-style-type: none;
+position: absolute;
+left: 60%;
+padding: 10px 10px;
+width: 100%;
+}
+
+.register {
 }
 
 .index-links {
