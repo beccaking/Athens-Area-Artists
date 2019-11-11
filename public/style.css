@@ -22,15 +22,23 @@ header {
   border-bottom: 1px solid lightsteelblue;
 }
 
+.dropdown {
+  float: left;
+  padding: 10px 10px;
+}
+
+.dropbtn {
+  background-color: black;
+  color: lightsteelblue;
+  border: none;
+  font-weight: bold;
+}
+
 .session-links {
 list-style-type: none;
 position: absolute;
-left: 60%;
-padding: 10px 10px;
-width: 100%;
-}
-
-.register {
+left: 50%;
+margin-left: 25px;
 }
 
 .index-links {
@@ -50,19 +58,6 @@ li {
 li a {
   font-weight: bold;
   color: lightsteelblue;
-}
-
-.dropdown {
-  float: left;
-  padding: 10px 15px;
-}
-
-.dropbtn {
-  background-color: black;
-  color: lightsteelblue;
-  border: none;
-  font-weight: bold;
-  width: 100px;
 }
 
 .dropdown-content {
