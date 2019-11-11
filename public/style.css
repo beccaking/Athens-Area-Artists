@@ -22,11 +22,6 @@ header {
   border-bottom: 1px solid lightsteelblue;
 }
 
-.dropdown {
-  float: left;
-  padding: 10px 10px;
-}
-
 .dropbtn {
   background-color: black;
   color: lightsteelblue;
@@ -39,6 +34,7 @@ list-style-type: none;
 position: absolute;
 left: 50%;
 margin-left: 25px;
+font-size: 10px;
 }
 
 li {
@@ -131,12 +127,33 @@ li a {
   border: none;
 }
 
+.dropdown {
+  float: left;
+  font-size: 10px;
+  padding: 10px 10px;
+}
+
+.my-collection {
+position: relative;
+right: 15px;
+top: 15px;
+}
+
+.logout {
+  background: black;
+  border: none;
+  position: relative;
+  top: 10px;
+}
+
 .index-links {
   list-style-type: none;
+  font-size: 10px;
 }
 
 .collection-links {
   list-style-type: none;
+  font-size: 10px;
 }
 
 .display {
@@ -160,18 +177,6 @@ li a {
 .save-button, .remove-button {
   margin-top: 15px;
   padding: 2px;
-}
-
-.logout {
-  margin-top: 10px;
-  background: black;
-  border: none;
-}
-
-.my-collection {
-position: relative;
-right: 150px;
-top: 32px;
 }
 
 .buttons {
@@ -289,14 +294,11 @@ footer {
   left: 80%;
   width: 100%;
   padding: 20px 20px;
+  font-size: 15px;
   }
 
   li {
     padding: 14px 20px;
-  }
-
-  .dropdown {
-    padding: 10px 15px;
   }
 
   .dropbtn {
@@ -340,11 +342,17 @@ footer {
     border: 2px solid lightsteelblue;
   }
 
+  .dropdown {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+
   .index-links {
     position: absolute;
     left: 90%;
     width: 100%;
     padding: 20px 20px;
+    font-size: 15px;
   }
 
   .collection-links {
@@ -352,6 +360,7 @@ footer {
     left: 35%;
     width: 100%;
     padding: 20px 20px;
+    font-size: 15px;
   }
 
   .back {
@@ -366,6 +375,9 @@ footer {
 
   .logout {
     margin-top: 10px;
+    position: relative;
+    top: 0px;
+    right: 0px;
   }
 
   .my-collection {
