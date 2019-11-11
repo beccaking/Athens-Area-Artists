@@ -228,9 +228,8 @@ top: 32px;
   color: black;
   top: 20px;
   border: 2px solid lightsteelblue;
-  width: 300px;
   position: relative;
-  left: 36%;
+  margin: 20px auto;
   padding: 20px;
 }
 
@@ -416,7 +415,6 @@ footer {
     top: 20px;
     width: 300px;
     position: relative;
-    left: 36%;
     padding: 20px;
   }
 

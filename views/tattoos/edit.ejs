@@ -5,6 +5,7 @@
 </head>
 <body>
   <h1>Tattoo Heaven</h1>
+  <img class="display editimg" src="<%=tattoo.img%>" alt="<%=tattoo.artist%>">
   <div class="editform">
   <form action="/tattoos/my-collection/<%=tattoo.id%>/edit?_method=PUT" method="POST">
     <span class='title'>Artist:</span> <input type="text" name="artist" value="<%=tattoo.artist%>"><br/>
@@ -14,7 +15,6 @@
     <input class="btn btn-default change" type="submit" value="Make Changes">
   </form>
 </div>
-<img class="display editimg" src="<%=tattoo.img%>" alt="<%=tattoo.artist%>">
   <% include ../partials/footer.ejs%>
 </body>
 </html>
